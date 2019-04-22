@@ -16,9 +16,19 @@ body {
 
 /* Header/Blog Title */
 .header {
+  {% load static %}
+
+  background-image: url("{% static "home/backmain.jpg" %}");
+  background-repeat: no-repeat;
+  background-size: auto;
   padding: 30px;
   text-align: center;
-  background: white;
+  text-decoration: underline;
+  color: #0066cc;
+  text-shadow: 2px 2px white;
+  font-family: "Arial", Arial, sans-serif;
+  font-size:10vw;
+
 }
 
 .header h1 {
@@ -64,7 +74,19 @@ body {
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+
+
+  background-color: lightblue;
+
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg1 {
+  {% load static %}
+
+  background-image: url("{% static "home/django.png" %}");
+  background-repeat: no-repeat;
+  background-size: 300px 100px;;
   width: 100%;
   padding: 20px;
 }
@@ -112,7 +134,7 @@ body {
 
 <div class="header">
   <h1>My Website</h1>
-  <p>Cristo Mathew</p>
+  <h3>Cristo Mathew</h3>
 </div>
 
 <div class="topnav">
@@ -132,28 +154,27 @@ body {
       <p></p>
     </div>
     <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Learn How to make this Website</h2>
+      <h5>April 22 2019</h5>
+      <div class="fakeimg1" style="height:200px;"></div>
+      <p>Ill be uploading a video soon on this site to help you create a website like this with just Djano,Htnl,Css</p>
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
       <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
+      <div class="fakeimg" style="height:100px;"></div>
       <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     </div>
     <div class="card">
       <h3>Popular Post</h3>
       <div class="fakeimg"><p><a href="/signup/create">Signup</a></p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p><a href="/blog/">Blog</a></p></div>
       <div class="fakeimg"><p>Image</p></div>
     </div>
     <div class="card">
       <h3>Follow Me:</h3>
-      <p>Coming soon</p>
+      <p><a href="https://twitter.com/mathew_cristo">@twitter</a></p>
     </div>
   </div>
 </div>
