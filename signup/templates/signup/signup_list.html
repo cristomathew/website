@@ -1,7 +1,10 @@
+
 {% extends 'base.html' %}
 {% block content %}
 <h1 style="color:#ff5050;">Signup</h1>
+<p style="color:red;">The following are the list of users currenlty active </p>
 {% for object in object_list %}
-<h3 style="color:red;">{{ object.id }} - <a href='{{ object.get_absolute_url }}'>{{ object.username }}</a></h3>
+
+<h3 style="color:blue;"> - {{ object.username }}</h3>
 {% endfor %}
 {% endblock %}
