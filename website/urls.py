@@ -20,6 +20,7 @@ from home.views import home_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('todo/',include('todo.urls')),
     path('blog/',include('blog.urls')),
     path('signup/',include('signup.urls')),
     path('',home_view,name="home-view"),
